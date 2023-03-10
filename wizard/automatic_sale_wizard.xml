@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<odoo>
+        <record id="auto_sale_view_form" model="ir.ui.view">
+            <field name="name">auto.sale.form</field>
+            <field name="model">auto.sale</field>
+            <field name="arch" type="xml">
+                <form string="Automatic Sale Order">
+                    <group>
+                        <field name="customer_id" />
+                        <field name="product_id" />
+                    </group>
+                    <group>
+                        <field name="product_uom_qty" />
+                        <field name="price_unit" />
+                    </group>
+                    <footer>
+                        <button name="action_sale_conform" string="Confirm" type="object"/>
+                        <button name="action_cancel" string="Cancel" type="object"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+</odoo>
